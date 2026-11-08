@@ -7,9 +7,8 @@
 <meta name="description" content="Kontakt zu JK Minerals & Metals in Goslar: Telefon +49 5321 40258, info@jkminerals.de, Anfrageformular.">
 <meta name="theme-color" content="#0E0F12">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%234B32C8' d='M0 0h32v32H0z'/%3E%3Cpath fill='%239A9A92' d='M19 0h13v32H8z'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -43,7 +42,7 @@
 
   <section aria-labelledby="h-direkt">
     <div class="wrap contact">
-      <div class="portrait" role="img" aria-label="Bildfläche für ein Porträt von Jan van Rahden"><p class="imgnote"><span class="ph-tag">Platzhalter Porträt</span></p></div>
+      <div class="monogram" aria-hidden="true"><span>JvR</span></div>
       <div>
         <p class="eyebrow">Ansprechpartner</p>
         <h3 id="h-direkt">Jan van Rahden</h3>
@@ -67,16 +66,9 @@
         <p class="eyebrow">Anfrage</p>
         <h2 id="h-anf">Ihre Anfrage</h2>
         <p style="color:var(--silber);max-width:420px">Je genauer Element, Form, Qualität und Menge beschrieben sind, desto schneller können wir antworten. Pflichtfelder sind mit <span class="req">*</span> markiert.</p>
-        <p style="color:var(--silber);max-width:420px;font-size:15px"><span class="ph-tag q">Technik offen</span> Bis ein Formular-Dienst eingerichtet ist, öffnet „Anfrage senden“ eine vorbereitete E-Mail an info@jkminerals.de.</p>
+        <p style="color:var(--silber);max-width:420px;font-size:15px">Beim Absenden öffnet sich Ihr E-Mail-Programm mit der vorbereiteten Anfrage an info@jkminerals.de.</p>
       </div>
       <form class="form" id="anfrage-form" novalidate>
-        <fieldset>
-          <legend>Ihr Anliegen <span class="ph-tag q">Ankauf möglich?</span></legend>
-          <div class="seg">
-            <label><input type="radio" name="anliegen" value="Material beziehen" checked><span>Material beziehen</span></label>
-            <label><input type="radio" name="anliegen" value="Material anbieten"><span>Material anbieten</span></label>
-          </div>
-        </fieldset>
         <div class="row2">
           <div class="fld"><label for="f-element">Element <span class="req">*</span></label><select id="f-element" required><option value="">Bitte wählen</option><option value="Tantal">Tantal (Ta)</option><option value="Niob">Niob (Nb)</option><option value="Wolfram">Wolfram (W)</option><option value="Zinn">Zinn (Sn)</option><option value="Rhenium">Rhenium (Re)</option><option value="Molybdän">Molybdän (Mo)</option><option value="Cobalt">Cobalt (Co)</option><option value="Nickel">Nickel (Ni)</option><option value="Zirkonium">Zirkonium (Zr)</option><option value="Hafnium">Hafnium (Hf)</option><option value="Gallium">Gallium (Ga)</option><option value="Germanium">Germanium (Ge)</option><option value="Platin">Platin (Pt)</option><option value="Palladium">Palladium (Pd)</option><option value="Sonstiges">Sonstiges</option></select></div>
           <div class="fld"><label for="f-form">Form</label><select id="f-form"><option value="">Bitte wählen</option><option>Erz / Konzentrat</option><option>Metall</option><option>Oxid / Verbindung</option><option>Schrott / Rückstand</option></select></div>
@@ -106,7 +98,7 @@
       <div><h2>Unternehmen</h2><ul><li><a href="unternehmen.html">Über uns</a></li><li><a href="aufbereitung.html">Aufbereitung &amp; Labor</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
       <div><h2>Kontakt</h2><ul><li><a href="tel:+49532140258">+49 5321 40258</a></li><li><a href="mailto:info@jkminerals.de">info@jkminerals.de</a></li><li>Wolfenbütteler Straße 42<br>38642 Goslar</li></ul></div>
     </div>
-    <div class="legal"><span>© JK Minerals &amp; Metals · USt-IdNr. DE 181267410</span><span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="bildnachweis.html">Bildnachweis</a></span></div>
+    <div class="legal"><span>© JK Minerals &amp; Metals · USt-IdNr. DE 181267410</span><span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span></div>
   </div>
 </footer>
 <script src="assets/js/main.js" defer></script>

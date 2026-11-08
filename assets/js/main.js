@@ -24,10 +24,8 @@
     e.preventDefault();
     if (!form.reportValidity()) return;
     var v = function (id) { var el = form.querySelector('#' + id); return el ? el.value.trim() : ''; };
-    var art = form.querySelector('input[name="anliegen"]:checked');
     var subject = 'Anfrage: ' + (v('f-element') || 'Material') + (v('f-form') ? ' (' + v('f-form') + ')' : '');
     var body = [
-      'Anliegen: ' + (art ? art.value : ''),
       'Element: ' + v('f-element'),
       'Form: ' + v('f-form'),
       'Menge: ' + v('f-menge'),

@@ -7,9 +7,8 @@
 <meta name="description" content="Beschaffung von Erzen und Konzentraten, Handel mit reinen NE-Metallen und NE-Metallschrotten.">
 <meta name="theme-color" content="#0E0F12">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%234B32C8' d='M0 0h32v32H0z'/%3E%3Cpath fill='%239A9A92' d='M19 0h13v32H8z'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -55,19 +54,34 @@
           <tr><th scope="row">Kassiterit (Zinnerz)</th><td>typ. 70–75 % Sn</td></tr>
           <tr><th scope="row">Wolframit</th><td>typ. 65–75 % WO₃</td></tr>
         </tbody></table>
-        <p><span class="ph-tag q">Offene Frage</span> Gibt es Herkunftsnachweise? Zinn, Tantal und Wolfram fallen unter die EU-Sorgfaltspflichten für Konfliktmineralien. Bis zur Klärung steht hier dazu nichts.</p>
       </div>
     </div>
     <div class="wrap" style="margin-top:64px">
       <div class="ores">
-        <figure class="ore"><a href="materialien.html#tantal" class="ore-img"><img src="assets/img/erze/tantalit.jpg" alt="Dunkelbraune bis schwarze Tantalit-Erzstufe mit rostroter Oberfläche, Nahaufnahme" loading="lazy" width="600" height="600"></a>
-          <figcaption><b>Tantalit</b><span>typ. 20–55 % Ta₂O₅</span><small>Beispielfoto · Foto: Andrew Silver, Gemeinfrei (Public Domain)</small></figcaption></figure>
-        <figure class="ore"><div class="img-ph sq" role="img" aria-label="Bildfläche für ein Foto von Columbit"><p class="imgnote"><span class="ph-tag">Foto folgt</span></p></div>
-          <figcaption><b>Columbit</b><span>typ. 50–60 % Nb₂O₅</span></figcaption></figure>
-        <figure class="ore"><div class="img-ph sq" role="img" aria-label="Bildfläche für ein Foto von Kassiterit"><p class="imgnote"><span class="ph-tag">Foto folgt</span></p></div>
-          <figcaption><b>Kassiterit</b><span>typ. 70–75 % Sn</span></figcaption></figure>
-        <figure class="ore"><div class="img-ph sq" role="img" aria-label="Bildfläche für ein Foto von Wolframit"><p class="imgnote"><span class="ph-tag">Foto folgt</span></p></div>
-          <figcaption><b>Wolframit</b><span>typ. 65–75 % WO₃</span></figcaption></figure>
+        <a class="ore" href="materialien.html#tantal" style="--tone:#6a5249">
+          <span class="ore-art" aria-hidden="true"><i></i></span>
+          <span class="ore-name">Tantalit</span>
+          <span class="ore-el">liefert Tantal <b>Ta</b></span>
+          <span class="ore-val">typ. 20–55 % Ta₂O₅</span>
+        </a>
+        <a class="ore" href="materialien.html#niob" style="--tone:#4a5160">
+          <span class="ore-art" aria-hidden="true"><i></i></span>
+          <span class="ore-name">Columbit</span>
+          <span class="ore-el">liefert Niob <b>Nb</b></span>
+          <span class="ore-val">typ. 50–60 % Nb₂O₅</span>
+        </a>
+        <a class="ore" href="materialien.html#zinn" style="--tone:#6b5640">
+          <span class="ore-art" aria-hidden="true"><i></i></span>
+          <span class="ore-name">Kassiterit</span>
+          <span class="ore-el">liefert Zinn <b>Sn</b></span>
+          <span class="ore-val">typ. 70–75 % Sn</span>
+        </a>
+        <a class="ore" href="materialien.html#wolfram" style="--tone:#45474f">
+          <span class="ore-art" aria-hidden="true"><i></i></span>
+          <span class="ore-name">Wolframit</span>
+          <span class="ore-el">liefert Wolfram <b>W</b></span>
+          <span class="ore-val">typ. 65–75 % WO₃</span>
+        </a>
       </div>
     </div>
   </section>
@@ -108,7 +122,6 @@
           <li>Ni-, Co- und Re-haltige Schrotte und Legierungen</li>
           <li>Nb-, Mo-, Zr-, Hf-, Sn-, Ga- und Ge-haltige Schrotte und Rückstände</li>
         </ul>
-        <p style="margin-top:24px"><span class="ph-tag q">Offene Frage</span> Kaufen wir Schrotte auch an? Falls ja, sollte hier stehen, wie man Material anbietet.</p>
       </div>
     </div>
   </section>
@@ -129,7 +142,7 @@
       <div><h2>Unternehmen</h2><ul><li><a href="unternehmen.html">Über uns</a></li><li><a href="aufbereitung.html">Aufbereitung &amp; Labor</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
       <div><h2>Kontakt</h2><ul><li><a href="tel:+49532140258">+49 5321 40258</a></li><li><a href="mailto:info@jkminerals.de">info@jkminerals.de</a></li><li>Wolfenbütteler Straße 42<br>38642 Goslar</li></ul></div>
     </div>
-    <div class="legal"><span>© JK Minerals &amp; Metals · USt-IdNr. DE 181267410</span><span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="bildnachweis.html">Bildnachweis</a></span></div>
+    <div class="legal"><span>© JK Minerals &amp; Metals · USt-IdNr. DE 181267410</span><span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span></div>
   </div>
 </footer>
 <script src="assets/js/main.js" defer></script>
